@@ -1,0 +1,114 @@
+[2026-04-21T14:42:28Z] === ENRICH ITERATION 1 START | repo=apple/swift-crypto sha=bb4ba815 ===
+[2026-04-21T14:42:28Z] [iter=1] PHASE START: enrich repo=apple/swift-crypto sha=bb4ba815 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/bb4ba815-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/bb4ba815dab96d4edc1e0b86d7b9acf9ff973a84.nq.gz
+[2026-04-21T14:42:28Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-21T14:43:21Z] [iter=1] AST store loaded triples=5788748 load_secs=51 mem_mb=981 MB
+[2026-04-21T14:43:21Z] [iter=1] Step 2: Finding LSP targets mem_mb=981 MB
+[2026-04-21T14:43:33Z] [iter=1] LSP targets found call_sites=45839 imports=1465 extends=7 implements=0 secs=12
+[2026-04-21T14:43:42Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=981 MB
+[2026-04-21T14:44:13Z] [iter=1] Position index built positions=343654 nodes_with_types=409381 secs=31 mem_mb=1017 MB
+[2026-04-21T14:44:13Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1017 MB already_completed_types=[] already_completed_files=0
+[2026-04-21T14:44:13Z] [iter=1] Resolving target type target_type=call_site count=45839
+[2026-04-21T14:44:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=Sources/CCryptoBoringSSL/crypto/fipsmodule/ec/p256-nistz-table.h
+[2026-04-21T14:44:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=2 resolved=2 errors=11 current=Sources/CCryptoBoringSSL/crypto/x509/x_name.cc
+[2026-04-21T14:46:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.7 files_done=6 resolved=26 errors=46 current=Sources/CCryptoBoringSSL/crypto/x509/v3_ncons.cc
+[2026-04-21T14:49:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=8 resolved=28 errors=127 current=Sources/CCryptoBoringSSL/crypto/bio/bio.cc
+[2026-04-21T14:50:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.6 files_done=9 resolved=31 errors=140 current=Sources/CCryptoBoringSSL/crypto/ecdsa/ecdsa_asn1.cc
+[2026-04-21T14:51:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=11 resolved=31 errors=167 current=Sources/CCryptoBoringSSL/crypto/evp/print.cc
+[2026-04-21T14:53:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=13 resolved=34 errors=219 current=Sources/CCryptoBoringSSL/crypto/rsa/rsa_asn1.cc
+[2026-04-21T14:54:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.4 files_done=15 resolved=39 errors=260 current=Sources/CCryptoBoringSSL/crypto/pem/pem_lib.cc
+[2026-04-21T14:57:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=18 resolved=66 errors=321 current=Sources/CCryptoBoringSSL/crypto/x509/x_pubkey.cc
+[2026-04-21T14:58:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.8 files_done=21 resolved=71 errors=344 current=Sources/CCryptoBoringSSL/crypto/hrss/hrss.cc
+[2026-04-21T15:06:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.3 files_done=22 resolved=138 errors=556 current=Sources/CCryptoBoringSSL/crypto/x509/x509_lu.cc
+[2026-04-21T15:07:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.9 files_done=23 resolved=138 errors=570 current=Sources/CCryptoBoringSSL/crypto/mem_internal.h
+[2026-04-21T15:09:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.0 files_done=24 resolved=161 errors=622 current=Sources/CCryptoBoringSSL/crypto/trust_token/pmbtoken.cc
+[2026-04-21T15:12:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.1 files_done=25 resolved=163 errors=698 current=Sources/CCryptoBoringSSL/crypto/pem/pem_pk8.cc
+[2026-04-21T15:13:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=27 resolved=163 errors=726 current=Sources/CCryptoBoringSSL/crypto/x509/x509_vfy.cc
+[2026-04-21T15:14:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=29 resolved=166 errors=739 current=Sources/CCryptoBoringSSL/crypto/md5/md5.cc
+[2026-04-21T15:20:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.7 files_done=30 resolved=166 errors=889 current=Sources/CCryptoBoringSSL/crypto/bn/sqrt.cc
+[2026-04-21T15:39:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.3 files_done=32 resolved=183 errors=1375 current=Sources/CCryptoBoringSSL/crypto/x509/x_all.cc
+[2026-04-21T15:41:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.5 files_done=33 resolved=183 errors=1428 current=Sources/CCryptoBoringSSL/crypto/pkcs7/pkcs7_x509.cc
+[2026-04-21T15:46:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.9 files_done=36 resolved=209 errors=1538 current=Sources/CCryptoBoringSSL/crypto/trust_token/voprf.cc
+[2026-04-21T15:48:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.5 files_done=37 resolved=212 errors=1578 current=Sources/CCryptoBoringSSL/crypto/rand/passive.cc
+[2026-04-21T15:49:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.7 files_done=39 resolved=224 errors=1607 current=Sources/CCryptoBoringSSL/crypto/x509/v3_cpols.cc
+[2026-04-21T15:49:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.2 files_done=40 resolved=224 errors=1620 current=Sources/CCryptoBoringSSL/crypto/x509/v3_bcons.cc
+[2026-04-21T15:50:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.0 files_done=44 resolved=229 errors=1638 current=Sources/CCryptoBoringSSL/crypto/trust_token/trust_token.cc
+[2026-04-21T15:51:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.7 files_done=47 resolved=238 errors=1654 current=Sources/CCryptoBoringSSL/crypto/x509/by_dir.cc
+[2026-04-21T15:52:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.5 files_done=49 resolved=240 errors=1675 current=Sources/CCryptoBoringSSL/crypto/asn1/a_type.cc
+[2026-04-21T15:53:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.6 files_done=51 resolved=253 errors=1701 current=Sources/CCryptoBoringSSL/crypto/asn1/tasn_dec.cc
+[2026-04-21T15:54:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.6 files_done=52 resolved=256 errors=1725 current=Sources/CCryptoBoringSSL/crypto/spake2plus/spake2plus.cc
+[2026-04-21T15:59:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.1 files_done=53 resolved=256 errors=1862 current=Sources/CCryptoBoringSSL/crypto/obj/obj.cc
+[2026-04-21T16:00:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.3 files_done=54 resolved=265 errors=1892 current=Sources/CCryptoBoringSSL/crypto/asn1/tasn_enc.cc
+[2026-04-21T16:01:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.0 files_done=56 resolved=279 errors=1908 current=Sources/CCryptoBoringSSL/crypto/trust_token/internal.h
+[2026-04-21T16:04:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.2 files_done=58 resolved=293 errors=1989 current=Sources/CCryptoBoringSSL/crypto/bio/bio_mem.cc
+[2026-04-21T16:05:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.2 files_done=61 resolved=294 errors=2014 current=Sources/CCryptoBoringSSL/crypto/evp/p_rsa.cc
+[2026-04-21T16:06:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.9 files_done=62 resolved=294 errors=2031 current=Sources/CCryptoBoringSSL/crypto/x509/x_x509a.cc
+[2026-04-21T16:06:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.5 files_done=66 resolved=296 errors=2045 current=Sources/CCryptoBoringSSL/crypto/x509/internal.h
+[2026-04-21T16:07:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.1 files_done=67 resolved=296 errors=2059 current=Sources/CCryptoBoringSSL/include/CCryptoBoringSSL_pool.h
+[2026-04-21T16:08:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.5 files_done=70 resolved=314 errors=2095 current=Sources/CCryptoBoringSSL/crypto/cipher/e_des.cc
+[2026-04-21T16:11:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.0 files_done=75 resolved=340 errors=2157 current=Sources/CCryptoBoringSSL/crypto/ec/ec_asn1.cc
+[2026-04-21T16:12:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.5 files_done=80 resolved=342 errors=2170 current=Sources/CCryptoBoringSSL/crypto/base64/base64.cc
+[2026-04-21T16:13:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.8 files_done=84 resolved=346 errors=2202 current=Sources/CCryptoBoringSSL/crypto/rand/ios.cc
+[2026-04-21T16:13:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.5 files_done=90 resolved=362 errors=2218 current=Sources/CCryptoBoringSSL/crypto/curve25519/spake25519.cc
+[2026-04-21T16:15:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.0 files_done=91 resolved=366 errors=2255 current=Sources/CCryptoBoringSSL/crypto/pkcs7/pkcs7.cc
+[2026-04-21T16:17:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.8 files_done=94 resolved=381 errors=2300 current=Sources/CCryptoBoringSSL/crypto/x509/x509_att.cc
+[2026-04-21T16:18:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.6 files_done=96 resolved=382 errors=2319 current=Sources/CCryptoBoringSSL/crypto/rsa/rsa_print.cc
+[2026-04-21T16:22:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.6 files_done=99 resolved=389 errors=2419 current=Sources/CCryptoBoringSSL/crypto/fipsmodule/bcm.cc
+[2026-04-21T16:22:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.3 files_done=100 resolved=395 errors=2437 current=Sources/CCryptoBoringSSL/crypto/x509/x509name.cc
+[2026-04-21T16:24:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.5 files_done=102 resolved=432 errors=2490 current=Sources/CCryptoBoringSSL/crypto/ex_data.cc
+[2026-04-21T16:25:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.0 files_done=106 resolved=448 errors=2504 current=Sources/CCryptoBoringSSL/crypto/x509/x509cset.cc
+[2026-04-21T16:26:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.9 files_done=109 resolved=450 errors=2524 current=Sources/CCryptoBoringSSL/crypto/dh/dh_asn1.cc
+[2026-04-21T16:31:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.3 files_done=111 resolved=451 errors=2659 current=Sources/CCryptoBoringSSL/crypto/x509/asn1_gen.cc
+[2026-04-21T16:32:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.1 files_done=113 resolved=457 errors=2678 current=Sources/CCryptoBoringSSL/crypto/asn1/a_strex.cc
+[2026-04-21T16:34:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.1 files_done=116 resolved=470 errors=2728 current=Sources/CCryptoBoringSSL/crypto/evp/p_ec_asn1.cc
+[2026-04-21T16:35:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.7 files_done=117 resolved=470 errors=2742 current=Sources/CCryptoBoringSSL/crypto/bio/connect.cc
+[2026-04-21T16:35:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.5 files_done=120 resolved=482 errors=2763 current=Sources/CCryptoBoringSSL/crypto/xwing/xwing.cc
+[2026-04-21T16:36:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.1 files_done=121 resolved=482 errors=2778 current=Sources/CCryptoBoringSSL/crypto/evp/p_dh_asn1.cc
+[2026-04-21T16:37:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.2 files_done=124 resolved=507 errors=2804 current=Sources/CCryptoBoringSSL/crypto/ec/hash_to_curve.cc
+[2026-04-21T16:39:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.3 files_done=125 resolved=513 errors=2857 current=Sources/CCryptoBoringSSL/crypto/mlkem/mlkem.cc
+[2026-04-21T16:40:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.3 files_done=130 resolved=515 errors=2880 current=Sources/CCryptoBoringSSL/include/CCryptoBoringSSL_span.h
+[2026-04-21T16:42:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=119.6 files_done=131 resolved=531 errors=2913 current=Sources/CCryptoBoringSSL/crypto/asn1/tasn_typ.cc
+[2026-04-21T16:42:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.2 files_done=132 resolved=531 errors=2928 current=Sources/CCryptoBoringSSL/crypto/x509/name_print.cc
+[2026-04-21T16:43:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.8 files_done=139 resolved=540 errors=2943 current=Sources/CCryptoBoringSSL/crypto/x509/v3_alt.cc
+[2026-04-21T16:43:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.4 files_done=142 resolved=549 errors=2958 current=Sources/CCryptoBoringSSL/crypto/evp/p_rsa_asn1.cc
+[2026-04-21T16:44:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.4 files_done=144 resolved=554 errors=2982 current=Sources/CCryptoBoringSSL/crypto/x509/v3_akeya.cc
+[2026-04-21T16:45:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.4 files_done=149 resolved=561 errors=3005 current=Sources/CCryptoBoringSSL/crypto/pkcs8/pkcs8.cc
+[2026-04-21T16:46:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.3 files_done=151 resolved=568 errors=3029 current=Sources/CCryptoBoringSSL/crypto/x509/a_sign.cc
+[2026-04-21T16:47:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.9 files_done=155 resolved=578 errors=3042 current=Sources/CCryptoBoringSSL/crypto/sha/sha512.cc
+[2026-04-21T16:48:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.6 files_done=156 resolved=578 errors=3061 current=Sources/CCryptoBoringSSL/crypto/cpu_arm_freebsd.cc
+[2026-04-21T16:49:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.6 files_done=159 resolved=582 errors=3086 current=Sources/CCryptoBoringSSL/crypto/fipsmodule/bn/rsaz_exp.h
+[2026-04-21T16:49:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.2 files_done=161 resolved=585 errors=3099 current=Sources/CCryptoBoringSSL/crypto/evp/p_x25519.cc
+[2026-04-21T16:50:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.9 files_done=165 resolved=586 errors=3117 current=Sources/CCryptoBoringSSL/crypto/asn1/tasn_new.cc
+[2026-04-21T16:50:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.4 files_done=166 resolved=588 errors=3131 current=Sources/CCryptoBoringSSL/crypto/x509/v3_bitst.cc
+[2026-04-21T16:51:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.3 files_done=168 resolved=594 errors=3152 current=Sources/CCryptoBoringSSL/crypto/cpu_aarch64_sysreg.cc
+[2026-04-21T16:52:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.1 files_done=174 resolved=619 errors=3172 current=Sources/CCryptoBoringSSL/crypto/x509/v3_skey.cc
+[2026-04-21T16:54:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.7 files_done=179 resolved=628 errors=3212 current=Sources/CCryptoBoringSSL/crypto/x509/rsa_pss.cc
+[2026-04-21T16:55:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.2 files_done=187 resolved=634 errors=3248 current=Sources/CCryptoBoringSSL/crypto/sha/sha1.cc
+[2026-04-21T16:56:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.7 files_done=193 resolved=637 errors=3261 current=Sources/CCryptoBoringSSL/crypto/ec/ec_derive.cc
+[2026-04-21T16:56:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.5 files_done=197 resolved=644 errors=3279 current=Sources/CCryptoBoringSSL/include/CCryptoBoringSSL_stack.h
+[2026-04-21T16:58:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.7 files_done=198 resolved=646 errors=3311 current=Sources/CCryptoBoringSSL/crypto/x509/x_req.cc
+[2026-04-21T16:59:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.0 files_done=202 resolved=647 errors=3342 current=Sources/CCryptoBoringSSL/crypto/asn1/tasn_fre.cc
+[2026-04-21T17:00:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.6 files_done=203 resolved=648 errors=3356 current=Sources/CCryptoBoringSSL/crypto/evp/sign.cc
+[2026-04-21T17:00:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.1 files_done=212 resolved=654 errors=3369 current=Sources/CCryptoBoringSSL/crypto/x509/v3_pcons.cc
+[2026-04-21T17:01:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.6 files_done=220 resolved=657 errors=3382 current=Sources/CCryptoBoringSSL/crypto/fipsmodule/aes/internal.h
+[2026-04-21T17:01:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.2 files_done=222 resolved=673 errors=3395 current=Sources/CCryptoBoringSSL/crypto/asn1/a_i2d_fp.cc
+[2026-04-21T17:02:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.8 files_done=226 resolved=676 errors=3412 current=Sources/CCryptoBoringSSL/crypto/fipsmodule/bn/internal.h
+[2026-04-21T17:02:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.5 files_done=227 resolved=676 errors=3427 current=Sources/CXKCP/FIPS202-opt64/KeccakHash.c
+[2026-04-21T17:03:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.1 files_done=230 resolved=676 errors=3442 current=Sources/CCryptoBoringSSL/crypto/x509/x509_d2.cc
+[2026-04-21T17:04:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.6 files_done=236 resolved=680 errors=3456 current=Sources/CCryptoBoringSSL/include/CCryptoBoringSSL_bio.h
+[2026-04-21T17:04:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.3 files_done=238 resolved=680 errors=3471 current=Sources/CCryptoBoringSSL/crypto/bn/div.cc
+[2026-04-21T17:05:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.8 files_done=240 resolved=684 errors=3485 current=Sources/CCryptoBoringSSL/include/CCryptoBoringSSL_dsa.h
+[2026-04-21T17:05:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.5 files_done=245 resolved=684 errors=3502 current=Sources/CCryptoBoringSSL/crypto/rand/trusty.cc
+[2026-04-21T17:06:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.0 files_done=264 resolved=690 errors=3514 current=Sources/CCryptoBoringSSL/include/CCryptoBoringSSL_bytestring.h
+[2026-04-21T17:07:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.6 files_done=272 resolved=698 errors=3529 current=Sources/CCryptoBoringSSL/crypto/rand/getentropy.cc
+[2026-04-21T17:07:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.2 files_done=284 resolved=698 errors=3542 current=Sources/CCryptoBoringSSL/include/CCryptoBoringSSL_ec_key.h
+[2026-04-21T17:09:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.0 files_done=291 resolved=718 errors=49423 current=scripts/gyb.py
+[2026-04-21T17:12:59Z] [iter=1] Target type resolved target_type=call_site resolved=774 errors=49510 secs=8926 mem_mb=1098 MB
+[2026-04-21T17:12:59Z] [iter=1] Resolving target type target_type=import_statement count=1465
+[2026-04-21T17:12:59Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=150.5 files_done=0 resolved=0 errors=0 current=Sources/CXKCP/FIPS202-opt64/KeccakP-1600-opt64.c
+[2026-04-21T17:13:29Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=151.0 files_done=251 resolved=633 errors=0 current=Sources/CCryptoBoringSSL/crypto/des/internal.h
+[2026-04-21T17:13:44Z] [iter=1] Target type resolved target_type=import_statement resolved=754 errors=1465 secs=44 mem_mb=1102 MB
+[2026-04-21T17:13:44Z] [iter=1] Resolving target type target_type=extends_clause count=7
+[2026-04-21T17:13:47Z] [iter=1] Target type resolved target_type=extends_clause resolved=7 errors=0 secs=3 mem_mb=1102 MB
+[2026-04-21T17:13:50Z] [iter=1] Step 5: Writing final enrichment file triples=65309
+[2026-04-21T17:13:51Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/bb4ba815dab96d4edc1e0b86d7b9acf9ff973a84.nq.gz size_kb=1217
+[2026-04-21T17:13:51Z] [iter=1] PHASE END: enrich elapsed_s=9084 elapsed_min=151.4 total_triples=65309
